@@ -8,22 +8,22 @@ require_once "Users.php";
 <header>   
         <nav>
                 <ul class="nav-link">
-                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="../public/index.php">Accueil</a></li>
                     <?php 
                     if(!isset($_SESSION['id'])){   
                     ?>                
-                    <li><a href="inscription.php">Inscription</a></li>
-                    <li><a href="connexion.php">Se connecter</a></li>
+                    <li><a href="../public/inscription.php">Inscription</a></li>
+                    <li><a href="../public/connexion.php">Se connecter</a></li>
                      
                      <?php             
                     }else{
                     ?>
-                    <li><a href="reprofil.php">Changer le profil</a></li>
-                    <li><a href="les_annonces.php">Annonces</a></li>
-                    <li><a href="les_profils.php">Profils</a></li>
-                    <li><a href="les_commentaires.php">Commentaires</a></li>
-                    <li><a href="recherche.php">Recherche</a></li>
-                    <li><button class="deconnect"><a href="deconnexion.php">OFF</a></button></li>
+                    <li><a href="../public/reprofil.php">Changer le profil</a></li>
+                    <li><a href="../public/les_annonces.php">Annonces</a></li>
+                    <li><a href="../public/les_profils.php">Profils</a></li>
+                    <li><a href="../public/les_commentaires.php">Commentaires</a></li>
+                    <li><a href="../public/recherche.php">Recherche</a></li>
+                    <li><button class="deconnect"><a href="../public/deconnexion.php">OFF</a></button></li>
                         
                 <?php
                     }

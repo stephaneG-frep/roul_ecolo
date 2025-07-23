@@ -3,11 +3,11 @@ error_reporting(-1);
 ini_set("display_errors", 1);
 //ouvrir la session
 
-require_once "Users.php";
-require_once "Annonce.php";
-require_once "include/head.php";
-require_once "include/header.php";
-require_once "fonction/check.php";
+require_once "./Users.php";
+require_once "./Annonce.php";
+require_once "./include/head.php";
+require_once "./include/header.php";
+require_once "./fonction/check.php";
 
 if (isset($_SESSION['id'])) {
     $id = $_SESSION['id'];
@@ -226,4 +226,4 @@ if(isset($_POST['nouvelle_annonce'])){
 
 
 
-<?php require_once "include/footer.php"; ?>
+<?php require_once "./include/footer.php"; ?>

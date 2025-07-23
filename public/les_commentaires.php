@@ -4,11 +4,11 @@ ini_set("display_errors", 1);
 //session_start();
 //inclure les fichiers nécessaire
 
-require_once "Users.php";
-require_once "Avis.php";
-require_once "db/config.php";
-require_once "include/head.php";
-require_once "include/header.php";
+require_once "./Users.php";
+require_once "./Avis.php";
+require_once "./db/config.php";
+require_once "./include/head.php";
+require_once "./include/header.php";
 
 
 //instancier la methode getAllCommentaires
@@ -41,5 +41,5 @@ $commentaires = $commentaire->getAllCommentaires();
         </div>
 </div>
 
-<?php require_once "include/footer.php"; ?>
+<?php require_once "./include/footer.php"; ?>
 

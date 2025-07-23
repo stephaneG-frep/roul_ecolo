@@ -3,11 +3,11 @@
 error_reporting(-1);
 ini_set("display_errors", 1);
 //inclure les fichiers nécéssaire
-require_once "Users.php";
-require_once "Annonce.php";
-require_once "db/config.php";
-require_once "include/head.php";
-require_once "include/header.php";
+require_once "./Users.php";
+require_once "./Annonce.php";
+require_once "./db/config.php";
+require_once "./include/head.php";
+require_once "./include/header.php";
 
 // Démarrer la session et vérifier si l'utilisateur est connecté
 if (isset($_SESSION['id'])) {
@@ -106,4 +106,4 @@ echo '
 
  
 
-<?php require_once "include/footer.php"; ?>
+<?php require_once "./include/footer.php"; ?>

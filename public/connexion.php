@@ -3,11 +3,11 @@ error_reporting(-1);
 ini_set("display_errors", 1);
 
 //require_once "session/SessionManager.php";
-require_once "Users.php";
+require_once "./Users.php";
 //require_once "admin/index.php";
-require_once "db/config.php";
-require_once "include/head.php";
-require_once "include/header.php";
+require_once "./db/config.php";
+require_once "./include/head.php";
+require_once "./include/header.php";
 //require_once "admin/index.php";
 
 
@@ -53,4 +53,4 @@ if(isset($_POST['connexion']) ){
 
 
 
-<?php require_once "include/footer.php";  ?>
+<?php require_once "./include/footer.php";  ?>

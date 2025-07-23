@@ -6,10 +6,10 @@ ini_set("display_errors", 1);
 
 require_once "Users.php";
 
-require_once "Annonce.php";
-require_once "db/config.php";
-require_once "include/head.php";
-require_once "include/header.php";
+require_once "./Annonce.php";
+require_once "./db/config.php";
+require_once "./include/head.php";
+require_once "./include/header.php";
 
 $annonceModel = new Annonce();
 $searchTerm = '';
@@ -94,4 +94,4 @@ if(isset($_SESSION['id'])){
 
 }?>
 
-<?php require_once "include/footer.php"; ?>
+<?php require_once "./include/footer.php"; ?>
