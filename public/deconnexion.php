@@ -1,5 +1,5 @@
 <?php
-require_once "Users.php";
+require_once "../Users.php";
 
 session_start();
 session_destroy();

@@ -2,11 +2,11 @@
 error_reporting(-1);
 ini_set("display_errors", 1);
 
-require_once "./Users.php";
-require_once "./include/head.php";
-require_once "./Avis.php";
-require_once "./include/header.php";
-require_once "./fonction/check.php";
+require_once "../Users.php";
+require_once "../include/head.php";
+require_once "../Avis.php";
+require_once "../include/header.php";
+require_once "../fonction/check.php";
 // si il y a un id donc un user instancier un nouvel user et l'appeler avec la méthode getUser...
 // de la classe Users
 if (isset($_SESSION['id'])) {
@@ -86,10 +86,4 @@ if(isset($_POST['attribuer'])){
 
 
 
-
-
-
-
-
-
-<?php require_once "./include/footer.php"; ?>
+<?php require_once "../include/footer.php"; ?>

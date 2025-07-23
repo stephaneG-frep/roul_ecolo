@@ -3,11 +3,11 @@
 error_reporting(-1);
 ini_set("display_errors", 1);
 //inclure les fichiers nécéssaire
-require_once "./Users.php";
-require_once "./Annonce.php";
-require_once "./db/config.php";
-require_once "./include/head.php";
-require_once "./include/header.php";
+require_once "../Users.php";
+require_once "../Annonce.php";
+require_once "../db/config.php";
+require_once "../include/head.php";
+require_once "../include/header.php";
 
 // Démarrer la session et vérifier si l'utilisateur est connecté
 if (isset($_SESSION['id'])) {
@@ -45,7 +45,7 @@ echo '
 <div class="">        
      <section class="item-1">
         <div class="item-1a">
-            <img class="photo_profil" src="img/photo_profil/'.$image.'" alt="photo de profil">   
+            <img class="photo_profil" src="../img/photo_profil/'.$image.'" alt="photo de profil">   
         </div>
         <h6>Nom : '.$nom.'</h6>
         <h6>Prénom : '.$prenom.'</h6>
@@ -87,7 +87,7 @@ echo '
                 <?php
                 if($user['role'] === "admin"){
                 ?>
-                    <p><a href="admin/index.php">Dashboard</a></p>
+                    <p><a href="../admin/index.php">Dashboard</a></p>
                 <?php
                 }
                 ?>
@@ -106,4 +106,4 @@ echo '
 
  
 
-<?php require_once "./include/footer.php"; ?>
+<?php require_once "../include/footer.php"; ?>

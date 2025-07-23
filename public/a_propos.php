@@ -1,6 +1,6 @@
 <?php
-   require_once "include/head.php";
-   require_once "include/header.php";
+   require_once "../include/head.php";
+   require_once "../include/header.php";
   
 ?>
 
@@ -8,7 +8,7 @@
 
 
     <div class="container px-5 py-5">
-        <img src="img/bureau1.jpg" class="img-fluid" alt="photo de nos bureaux" width="1000" height="400"
+        <img src="../img/bureau1.jpg" class="img-fluid" alt="photo de nos bureaux" width="1000" height="400"
             loading="lazy">
     </div>
     <h1 class="display-4 fw-bold ">Notre histoire</h1>
@@ -27,7 +27,7 @@
     </div>
     <div class="row">
         <div class="container px-5 py-5">
-            <img src="img/bureau2.jpg" class="img-fluid" alt="photo de nos bureaux" width="1000" height="400"
+            <img src="../img/bureau2.jpg" class="img-fluid" alt="photo de nos bureaux" width="1000" height="400"
                 loading="lazy">
         </div>
     </div>
@@ -36,5 +36,5 @@
 
 
 <?php 
-   require_once "include/footer.php";
+   require_once "../include/footer.php";
 ?>

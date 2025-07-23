@@ -4,10 +4,10 @@ ini_set("display_errors", 1);
 //session_start();
 //inclure les fichiers nécessaire
 
-require_once "./Users.php";
-require_once "./db/config.php";
-require_once "./include/head.php";
-require_once "./include/header.php";
+require_once "../Users.php";
+require_once "../db/config.php";
+require_once "../include/head.php";
+require_once "../include/header.php";
 
 // Instanciation du gestionnaire de productions
 $allUsers = new Users();
@@ -38,7 +38,7 @@ $users = $allUsers->getAllUsers();
             echo'
          <section class="item-1">
             <div class="item-1a">
-                <img class="photo_profil" src="img/photo_profil/'.$image.'" alt="photo de profil">   
+                <img class="photo_profil" src="../img/photo_profil/'.$image.'" alt="photo de profil">   
             </div>
             <h6>Nom : '.$nom.'</h6>
             <h6>Prénom : '.$prenom.'</h6>
@@ -57,4 +57,4 @@ $users = $allUsers->getAllUsers();
 
     }?>
 
-<?php require_once "./include/footer.php"; ?>
+<?php require_once "../include/footer.php"; ?>

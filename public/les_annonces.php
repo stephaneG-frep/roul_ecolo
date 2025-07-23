@@ -4,11 +4,11 @@ ini_set("display_errors", 1);
 //session_start();
 //inclure les fichiers nécessaire
 
-require_once "./Users.php";
-require_once "./Annonce.php";
-require_once "./db/config.php";
-require_once "./include/head.php";
-require_once "./include/header.php";
+require_once "../Users.php";
+require_once "../Annonce.php";
+require_once "../db/config.php";
+require_once "../include/head.php";
+require_once "../include/header.php";
 
 
 //instancier la methode getAllAnnonces
@@ -25,7 +25,7 @@ $annonces = $annonce->getAllAnnonces();
                     <?php foreach ($annonces as $annonce): ?>
                         <div class="annonce-card">
                             <div class="annonce-header">
-                                <img src="img/photo_profil/<?= $annonce['photo_profil'] ?>" alt="Photo de profil" class="user-photo">
+                                <img src="../img/photo_profil/<?= $annonce['photo_profil'] ?>" alt="Photo de profil" class="user-photo">
                                 <div class="user-info">
                                     <h3><?= htmlspecialchars($annonce['prenom'] . ' ' . $annonce['nom']) ?></h3>
                                     <h3><?=$annonce['email']?></h3>
@@ -45,5 +45,5 @@ $annonces = $annonce->getAllAnnonces();
                 </div>
 </div>
 
-<?php require_once "./include/footer.php"; ?>
+<?php require_once "../include/footer.php"; ?>
 

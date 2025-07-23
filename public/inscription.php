@@ -1,11 +1,11 @@
 <?php
 //inclure les fichiers nécessaire
 //require_once "session/SessionManager.php";
-require_once "./Users.php";
-require_once "./db/config.php";
-require_once "./include/head.php";
-require_once "./include/header.php";
-require_once "./fonction/check.php";
+require_once "../Users.php";
+require_once "../db/config.php";
+require_once "../include/head.php";
+require_once "../include/header.php";
+require_once "../fonction/check.php";
 //require_once "fonction/token.php";
 
 
@@ -56,11 +56,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }else{
             if(preg_match("#gif|jpeg|png|jpg#",$_FILES['photo_profil']['type'])){
                 //inclure le fichier token
-                require_once "fonction/token.php";
+                require_once "../fonction/token.php";
                 //donner un nom aléatoire
                 $photo_profil = $token."_".$_FILES['photo_profil']['name'];
                 //chemin de la photo stocker
-                $path = "img/photo_profil/";
+                $path = "../img/photo_profil/";
                 move_uploaded_file($_FILES['photo_profil']['tmp_name'],$path.$photo_profil);
 
             }else{
@@ -137,4 +137,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 
-<?php require_once "./include/footer.php"; ?>
+<?php require_once "../include/footer.php"; ?>
